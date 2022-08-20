@@ -5,15 +5,7 @@ import request from "supertest";
 import app from "../../app.js";
 import User from "../../database/schemas/user-schema.js";
 
-const makeUser = () => ({
-	_id: faker.datatype.uuid(),
-	firstName: faker.name.firstName(),
-	lastName: faker.name.lastName(),
-	email: faker.internet.email(),
-	jobTitle: faker.name.jobTitle(),
-	isSuper: faker.datatype.boolean(),
-	password: faker.internet.password(),
-});
+import { makeUser } from "../../testUtils/fixtures.js";
 
 afterEach(() => {
 	// restore the spy created with spyOn
