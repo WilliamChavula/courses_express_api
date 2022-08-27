@@ -11,4 +11,4 @@ COPY package.json .
 RUN yarn install
 COPY . .
 
-ENTRYPOINT [ "nodemon", "server.js" ]
+ENTRYPOINT ["yarn", "run", "dev" ]

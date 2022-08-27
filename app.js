@@ -4,11 +4,11 @@ import cors from "cors";
 import "dotenv/config";
 import morgan from "morgan";
 
-import authRouter from "./routes/auth-routes.js";
-import userRouter from "./routes/user-routes.js";
-import moduleRouter from "./routes/module-routes.js";
-import subjectRouter from "./routes/subject-routes.js";
-import courseRouter from "./routes/course-routes.js";
+import authRouter from "./routes/auth-routes";
+import userRouter from "./routes/user-routes";
+import moduleRouter from "./routes/module-routes";
+import subjectRouter from "./routes/subject-routes";
+import courseRouter from "./routes/course-routes";
 
 const app = express();
 
